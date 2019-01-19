@@ -43,18 +43,18 @@ Docker 설치하기
 	- 로컬 및 원격 서버에 도커 엔진을 설치하고 다양한 환경 설정을 자동으로 수행해주는 클라이언트
 	- **본 프로젝트는 Docker Toolbox** 사용
 
-###Docker Toolbox 설치
+### Docker Toolbox 설치
 [Docker Toolbox Download](https://docs.docker.com/toolbox/toolbox_install_windows/)
 > 구현 순서 : 윈도우 os위에 VM사용 -> (linuxOS) Ubuntu -> GuestOS위에 Docker 엔진 구동(가상화 기능 사용할 수 있어야함)
 
 *	*	*
-###Docker다운로드 후
+### Docker다운로드 후
 * Docker Quickstart Terminal 선택하여 실행(윈도우 찾기버튼)
 * 알아서 자신의 컴퓨터에 맞게 셋팅이 됨
 * 사용자의 컴퓨터에 따라 오류가 날수도 있음...(구글링을 합시다..)
 * 설치가 완료되면 cmd창에 도커 로고(고래)가 뜨게 됨
 
-###Docker의 기본적인 사용법
+### Docker의 기본적인 사용법
 * **docker --version**
 	- 도커 버전 확인
 
