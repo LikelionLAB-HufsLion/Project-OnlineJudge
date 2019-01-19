@@ -36,14 +36,14 @@ Docker 실습해보기
         > run명령어 후에 이미지가 없으면 다운로드(pull)한 뒤 컨테이너 생성(create)하고 시작(start)<br>
         > 컨테이너 정상적으로 실행됐지만 명령어 전달이 없어서 바로 종료됨.<br>
         > 컨테이너는 프로세스라서 실행중인 프로세스가 없으면 컨테이너는 종료된다.<br>
-    - /bin/bash 명령어로 ubuntu:16.04 컨테이너 실행
-        -docker run --rm -it ubuntu:16.04 bin/bash (컨테이너 실행)
-            - cat /etc/issue
-            - ls
-            - 위 명령어를 쳐보면 컨테이너가 실행됐다는 것을 알 수 있음
-            - 컨테이너 내부에 들어가기 위해 bash를 실행하고 키보드 입력을 위해 -it옵션을 주었음
-            - 프로세스가 종료되면 컨테이너가 자동으로 삭제되도록 --rm옵션을 추가
-            - exit로 bash를 종료하면 컨테이너도 같이 종료
+    - /bin/bash 명령어로 ubuntu:16.04 컨테이너 실행<br>
+        -docker run --rm -it ubuntu:16.04 bin/bash (컨테이너 실행)<br>
+            > cat /etc/issue<br>
+            > ls<br>
+            > 위 명령어를 쳐보면 컨테이너가 실행됐다는 것을 알 수 있음<br>
+            > 컨테이너 내부에 들어가기 위해 bash를 실행하고 키보드 입력을 위해 -it옵션을 주었음<br>
+            > 프로세스가 종료되면 컨테이너가 자동으로 삭제되도록 --rm옵션을 추가<br>
+            > exit로 bash를 종료하면 컨테이너도 같이 종료<br>
 
 * **redis container**
     > redis는 메모리 기반의 다양한 기능을 가진 스토리지.<br>
@@ -57,7 +57,7 @@ Docker 실습해보기
 * **MySQL 5.7 container**
     - -e옵션을 이용하여 환경변수 설정하고 -name옵션을 이용해서 컨테이너 읽기 어려운 ID대신 쉬운 이름 부여
     - --name옵션을 생략하면 도커가 자동으로 이름을 지어줌. 유명한 과학자나 해커의 이름과 수식어를 조합하여 랜덤으로 생성
-    - **docker run -d -p 3306:3306\-e MYSQL_ALLOW_EMPTY_PASSWORD=true \--name mysql \mysql:5.7**
+    - **docker run -d -p 3306:3306 \-e MYSQL_ALLOW_EMPTY_PASSWORD=true \--name mysql \mysql:5.7**
      > MY_SQL_ALLOW_EMPTY_PASSWORD의 환경설정 하는 이유 : 패스워드 없이 root 계정을 만들기 위함<br>
      > mysql을 컨테이너 이름으로 할당하고 백그라운드 모드로 띄우기 위해 -d 옵션을 준다
     - mysql -h127.0.0.1 -uroot (linux에서 mysql 확인하기)
