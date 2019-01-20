@@ -10,7 +10,7 @@ Opensource와 Docker을 이용한 OnlineJudge사이트 만들기
     > 5. 도커 컨테이너를 구동. 자신의 컴퓨터에서 온라인 저지 사이트 실행(**docker-compose up -d**)<br>
     > 7. 제대로 구동이 되면(4개의 모듈이 돌아갈 것) cmd창을 닫은 후 Docker Quickstart Terminal 실행<br>
     > 8. **Docker-machine ls**명령어로 현재 돌아가는 도커머신 확인<br>
-    > 9. 도커 내부 컨테이너 확인(**docker ps -a**로 확인. 받은 opensource가 돌아가는 것을 확인. 여기서 __judge-server__(핵심)은 __API형태__로 사용자가 입력한 소스코드를 채점함.)<br>
+    > 9. 도커 내부 컨테이너 확인(**docker ps -a**로 확인. 받은 opensource가 돌아가는 것을 확인. 여기서 __judge-server__(핵심)은 **API형태**로 사용자가 입력한 소스코드를 채점함.)<br>
     > 10. oj-backend는 클라이언트가 접근할 수 있는 웹서버임.
     > 11. **docker-machine ip**를 입력하여 현재 머신이 어떤 아이피에서 접근 가능한지 확인할 수 있음.(ip 복사한 후 웹에 붙여넣어보기)<br>
     > 12. 관리자 계정의 아이디는 root, 비밀번호는 rootroot (소스 설명 document : [https://docs.onlinejudge.me/#/judgeserver/api](https://docs.onlinejudge.me/#/judgeserver/api))<br>
