@@ -70,7 +70,7 @@ var app = new Vue({
 });
 '''
 
-위의 순서대로 진행을 하면 처음에 HTML 코드로 쳤던 Hello, Vue가 뜬다!
+위의 순서대로 진행을 하면 처음에 HTML 코드로 쳤던 'Hello, Vue' 가 뜬다!
 > : name의 값을 'Vue'라고 설정했어서 '''{{ name }} '''부분에 대입 되는 것
 
 ##### 4. 콘솔에서 app.name값 변경
