@@ -29,7 +29,7 @@
 #### vue.js 불러오기
 * 상단의 Add Library 버튼을 눌러 제일 최신 버전 받기(업데이트가 바로바로 되지 않아 Vue.js메뉴얼에서 최신버전 CDN 받기 )
 [메뉴얼의 서치방법 | CDN 주소 제공(링크 중 unpkg에서 제공하는 링크 사용)] (https://unpkg.com/vue/dist/vue.js)
-'''
+   
  <!DOCTYPE html>
     <html>
     <head>
@@ -43,38 +43,38 @@
   
     </body>
     </html>
-'''
+
 ### 간단한 예제코드 작성해보기
 body 태그에서 vue를 불러오기 전에 코드 삽입
 
 ##### 1. body 태그에 script 위에 코드 삽입
-'''
-    <div id = "app">
+
+   <div id = "app">
     <h1>Hello, Vue</h1>
     <div>
-'''
+
 
 ##### 2. h1 태그 안의 Vue 부분을 {{ name }} 으로 변경
-'''
+   
     <h1>Hello, {{ name }}</h1>
-'''
+
 
 ##### 3. 자바스크립트 탭을 열어서 다음과 같이 코드 작성 (새로운 뷰를 정의)
 <Java Script>
-'''
-var app = new Vue({
+
+   var app = new Vue({
   el: '#app', //어떤 엘리먼트에 적용할지 정함
   //data는 해당 뷰에서 사용할 정보를 지님
   data: {
     name : 'Vue'
   }
 });
-'''
+
 
 위의 순서대로 진행을 하면 처음에 HTML 코드로 쳤던 'Hello, Vue' 가 뜬다!
-> : name의 값을 'Vue'라고 설정했어서 '''{{ name }} '''부분에 대입 되는 것
+> : name의 값을 'Vue'라고 설정했어서 `{{ name }} `부분에 대입 되는 것
 
 ##### 4. 콘솔에서 app.name값 변경
 상단의 콘솔을 클릭하여 콘솔창을 실행
-'''app.name = "velopert" ''' 로 입력해보면 화면에 바로 값이 바뀌어 렌더링됨
+`app.name = "velopert" ` 로 입력해보면 화면에 바로 값이 바뀌어 렌더링됨
 
