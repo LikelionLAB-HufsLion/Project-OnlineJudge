@@ -61,8 +61,8 @@ body 태그에서 vue를 불러오기 전에 코드 삽입
 
 ##### 3. 자바스크립트 탭을 열어서 다음과 같이 코드 작성 (새로운 뷰를 정의)
 <Java Script>
-
-   var app = new Vue({
+   
+var app = new Vue({
   el: '#app', //어떤 엘리먼트에 적용할지 정함
   //data는 해당 뷰에서 사용할 정보를 지님
   data: {
