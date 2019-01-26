@@ -20,7 +20,7 @@
 
 *   *   *
 #### JSBin을 통해 vue.js 시작하기
-    > JSBin은 브라우저에서 (JS, CSS, HTML)코드를 작성하여 실시간으로 결과를 확인할 수 있음. <br>
+    > JSBin은 브라우저에서 (JS, CSS, HTML)코드를 작성하여 실시간으로 결과를 확인할 수 있다 <br>
     [JSBin] (https://jsbin.com/fivomus/edit?html,output)
     * 상단의 JavaScripts 탭 누루면 JS를 작성할 수 있는 박스가 생겨남
     * Output부분에서 quto-run JS 부분 체크
