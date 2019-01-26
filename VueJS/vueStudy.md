@@ -67,8 +67,15 @@ body 태그에서 vue를 불러오기 전에 코드 삽입
       data: {  
       name : 'Vue'  
       }  
-   });  
+   });
 
+다시
+   var app = new Vue({
+      el : '#app', //어떤 엘리먼트에 적용할지 정함
+      data: { //data는 해당 뷰에서 사용할 정보를 지님
+      name : '펻'
+      }
+   });
 
 위의 순서대로 진행을 하면 처음에 HTML 코드로 쳤던 'Hello, Vue' 가 뜬다!
 > : name의 값을 'Vue'라고 설정했어서 `{{ name }} `부분에 대입 되는 것
